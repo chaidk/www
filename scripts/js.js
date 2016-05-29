@@ -45,6 +45,10 @@ $(function(){
 			else{
 				close();
 			}
+		$(document).click(function(){
+			close();
+		});
+		event.stopPropagation();
 	function open(){
 		menu.attr("id","1");
 		icon.css("right","200px").toggleClass("open");

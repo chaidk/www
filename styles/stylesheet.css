@@ -474,6 +474,7 @@ div.nav {
   overflow: hidden;
   transition:  width 0.5s;
   z-index: 2;
+  overflow: display;
 }
 div.nav div#block {
   height: 100px;
