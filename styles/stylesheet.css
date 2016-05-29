@@ -421,11 +421,25 @@ textarea {
 
 
 html,body {
-	background-color: #1D2F3B;
+	/*background-color: #1D2F3B;*/
+   background-color: #222222;
   width: 100%;
   height:99.9%;
-  min-width: 640px;
+  /*min-width: 1280px;*/
+  /*min-height: 1024px;*/
   font-family: Arial;
+  overflow: hidden;
+}
+img.background {
+  position: absolute;
+  left: 0px;
+  /*z-index: -10;*/
+  width: 100%;
+  min-width: 1280px;
+  min-height: 1024px;
+  transition: left 0.5s;
+  display: none;
+  z-index: 1;
 }
 #body {
 }
@@ -443,6 +457,7 @@ img.list-icon {
   top:100px;
 	width: 80px;
   transition: opacity 0.5s,right 0.5s,transform 0.5s;
+  z-index: 2;
 }
 div.header img:hover{
   opacity:0.5;
@@ -458,6 +473,7 @@ div.nav {
   margin: 1px;
   overflow: hidden;
   transition:  width 0.5s;
+  z-index: 2;
 }
 div.nav div#block {
   height: 100px;
@@ -495,18 +511,22 @@ div#body {
 }
 div#logo {
   height: 70%;
+  z-index: 2;
 }
 img#logo {
+  position: relative;
 	max-width: 25%;
 	min-width: 450px;
   padding-top:250px;
 	display: none;
+  z-index: 2;
 }
 div.contact {
   /*width: 600px;*/
   height: 100px;
   position: relative;
   top:100px;
+  z-index: 2;
 }
 img.contact {
   position: absolute;

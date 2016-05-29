@@ -31,9 +31,11 @@ $(function(){
 	var icon=$("img.list-icon");
 	var up=$("img.up");
 	var nav=$("div.nav");
+	var background=$("img.background");
+	background.fadeIn(1000);
 	// up.mouseover(function(){
 	// 	up.toggleClass("hover");
-	// }).mouseout(function(){
+	// }).mouseout(function(){`
 	// 	up.toggleClass("hover");	
 	// });
 	menu.click(function(){
@@ -47,6 +49,7 @@ $(function(){
 		menu.attr("id","1");
 		icon.css("right","200px").toggleClass("open");
 		nav.css("width",200);
+		background.css("left","-200px");
 		// for (var i=0;i<4;i++) {
 			$("div.nav div:gt(0)").css("display","none");			
 			$("div.nav div#nav0").delay(100).fadeIn(1000);
@@ -60,6 +63,7 @@ $(function(){
 		menu.attr("id","0");
 		icon.css("right","100px").toggleClass("open");
 		nav.css("width",0);	
+		background.css("left","0px");
 		}
 		});	
 	// function open(){
