@@ -66,6 +66,7 @@ p{
 }
 .intro p{
 	width: 30%;
+	min-width: 700px;
 	margin: 0 auto;
 	font-size: 1.5em;
 }
@@ -326,7 +327,6 @@ div#section3 p.h {
 	border-color: #326A83;
 }
 div#section3 p {
-	width: 25%;
 	display: block;
 	background-color: #50859C;
 	line-height: 1.5em;
