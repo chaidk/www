@@ -24,6 +24,8 @@ $(function(){
 		icon.toggleClass("touch");
 		nav.css("height","100%");
 		header.css("background-color","#080808");
+		// $("html").css("background-color","#000000");
+		$("img.background").fadeOut(500);
 		// for (var i=0;i<4;i++) {
 			$("div.nav div:gt(0)").css("display","none");			
 			$("div.nav div#nav0").delay(200).fadeIn(1000);
@@ -36,7 +38,8 @@ $(function(){
 		icon.attr("id","0");
 		icon.toggleClass("touch");
 		nav.css("height",0);
-		header.css("background-color","#202020");	
+		header.css("background-color","#202020");
+		$("img.background").fadeIn(500);	
 		};	
 	icon.click(function(){
 		if(icon.attr("id")=="0"){
