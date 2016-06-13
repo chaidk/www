@@ -4,6 +4,8 @@ $(function(){
 	var winWidth=$(window).width();
 	if (winWidth<winHeight){
 	$("div#header").css("background-image","url('img/home m s.jpg')");	
+	}else{
+	$("div#header").css("background-image","url('img/home s.jpg')");		
 	}
 	$("div#header").css("height",winHeight);
 	var $scrollDown = $("div#scrollDown");

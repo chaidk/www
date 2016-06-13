@@ -1,7 +1,7 @@
 /*header*/
 div#header {
-	/*background-color: #a0a0a0;*/
-	background-image: url("../img/home s.jpg");
+	background-color: #ffffff;
+	/*background-image: none;*/
 	/*width: 100%;*/
 	height: auto;
 	background-size: 100%
