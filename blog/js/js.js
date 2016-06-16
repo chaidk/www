@@ -28,7 +28,20 @@ $(function(){
 	        $toTop.fadeOut(500);
 	    }
 	}
-
+//more
+	var $index=$("div.blog-main").children("div").length;
+	// alert($index);
+	for (var i=3;i<$index;i++){
+		$("div.p"+i).hide();
+	};
+	var $more=$("button#more");
+	var j=3;
+	$more.click(function(){
+		for (var i=0;i<1;i++){
+			$("div.p"+j).show();
+			j++;
+			};
+		});
 
 
 
