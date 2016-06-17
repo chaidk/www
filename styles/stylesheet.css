@@ -433,7 +433,6 @@ html,body {
 img.background {
   position: absolute;
   left: 0px;
-  /*z-index: -10;*/
   width: 100%;
   min-width: 1280px;
   min-height: 1024px;
@@ -474,7 +473,6 @@ div.nav {
   overflow: hidden;
   transition:  width 0.5s;
   z-index: 2;
-  overflow: display;
 }
 div.nav div#block {
   height: 100px;
@@ -500,7 +498,7 @@ div.nav a {
   padding-top: 10px;
   text-decoration: none;
   color:white;
-  transition: 0.5s;
+  transition-timing-function: ease-out;
 }
 div.nav a:hover {
   background-color: #191f24;
