@@ -21,7 +21,7 @@ $(function(){
 	$( 'body, html' ).animate({ scrollTop : $content.offset().top }, 300 );
 	});
 	window.onscroll = function () {
-	    if (document.documentElement.scrollTop + document.body.scrollTop > winHeight+100) {
+	    if (document.body.scrollTop > winHeight+100) {
 	        $toTop.fadeIn(500);
 	    }
 	    else {
@@ -31,11 +31,11 @@ $(function(){
 //more
 	var $index=$("div.blog-main").children("div").length;
 	// alert($index);
-	for (var i=3;i<$index;i++){
+	for (var i=4;i<$index;i++){
 		$("div.p"+i).hide();
 	};
 	var $more=$("button#more");
-	var j=3;
+	var j=4;
 	$more.click(function(){
 		for (var i=0;i<1;i++){
 			$("div.p"+j).show();
