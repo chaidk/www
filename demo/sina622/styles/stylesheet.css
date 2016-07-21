@@ -67,6 +67,17 @@ input#file {
 	height: 34px;
 	width: 120px;
 }
+button#sub1 , #sub2 {
+	height: 50px;
+	width: 160px;
+	background-color: #b91212;
+	border-radius: 5px;
+	border:0;
+    -webkit-appearance : none ;
+    font-size: 2.2em;
+    color: white;
+    font-family: 微软雅黑;
+}
 #name2,#phoneNumber2,#profession,#addrass2{
 	padding-left: 10px;
 	color: white;
@@ -87,7 +98,8 @@ div#cover img{
 	display: none;
 }
 
-/*切片*/
+
+
 
 #id1-01 {
 	position:absolute;
