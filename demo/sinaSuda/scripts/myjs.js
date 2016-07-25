@@ -28,11 +28,6 @@ function close() {
 	setTimeout(function(){ cover.css("display","none");},300);
 	setTimeout(function(){ menuList.css("display","none");},300);	
 }
-var rP2 = $("#rP2");
-var bP2 = $("#bP2");
-rP2.bind('tap',function(){
-	alert("!");
-});
 //nav
 var main = $("#main");
 var page = main.children();
@@ -43,6 +38,25 @@ var backBtn = $('#bP2,#bP5');
 backBtn.bind('tap',function(){
 	tab(-1);
 	});
+$("#submitP1").bind('tap',function(){
+	alert("资料已发送，请查收");
+	$("#inputEmail").val('');
+	});
+$("#rP2").bind('tap',function(){
+	tab(1);
+});
+$("#submitP4").bind('tap',function(){
+	alert("弹幕已发送！");
+	$("textarea").val('');
+});
+$("#rewriteP4").bind('tap',function(){
+	$("textarea").val('');
+});
+$("#voteP5").bind('tap',function(){
+	alert("投票成功！");
+	tab(-1);
+});
+
 
 function tab(id){
 	for (i=1;i<7;i++){

@@ -46,9 +46,10 @@ div#formP1 {
 }
 div#formP1 input {
     /*display: block;*/
-    margin-top: 79px; 
-    padding: 0 30px;  
-    height: 63px;  
+    position: relative;
+    background-color: transparent;
+    margin-top: 70px; 
+    padding: 0 30px; 
     height: 60px;
     line-height: 40px;
     width: 420px;
@@ -104,6 +105,17 @@ div#formP4 {
     position: relative;
     top: 170px;
     background-image: url(../images/bg_danmaku.png);
+}
+#commit {
+    width: 423px;
+    height: 312px;
+    padding: 14px 28px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin:30px 0 0 4px;
+    font-family: 'Microsoft YaHei';
+    font-size: 28px;
+    background-color: transparent;
 }
 div#p4 p{
     font-size: 1.5em;

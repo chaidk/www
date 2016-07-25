@@ -9,6 +9,9 @@ require.config({
 	shim:{
 		'zeptotouch':{
 			deps:['zepto']
+		},
+		'myjs':{
+			deps:['zepto']
 		}
 	}
 });
