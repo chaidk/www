@@ -289,7 +289,7 @@ div#section0 p {
 div#section1 p {
 	display: block;
 	background-color: #326A83;
-	line-height: 1em;
+	line-height: 2.5em;
 	font-size: 1.2em;
 	color: #DDEDF4;
 	border-radius:10px;
@@ -304,6 +304,20 @@ div#section1 p.h {
 	font-weight: bold;
 	border-radius:10px;
 	margin-top: 5px;
+}
+div#section1 p.demo {
+	background-color: rgba(50,50,50,0.8);
+	display: block;
+	line-height: 2.5em;
+	font-size: 1.2em;
+	color: #DDEDF4;
+	border-radius:10px;
+	margin-top: 5px;
+}
+
+div#section1 a {
+	display: block;
+	line-height: 2em;
 }
 /*div#section3 p {
 	width: 25%;
