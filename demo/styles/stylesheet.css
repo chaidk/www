@@ -1,0 +1,124 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	background-color: #49afcd;
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
+/*main*/
+h1 {
+	font-size: 6em;
+	font-weight: bold;
+	font-family: lato,"Microsoft YaHei";
+	color: #133B4C;
+	text-align: center;
+}
+p,a {
+	font-family: lato,"Microsoft YaHei";
+	color: #DDEDF4;
+	transition: 0.5s;
+	line-height: 1.5;
+  	text-decoration: none;
+}
+h2 {
+	font-family: lato,"Microsoft YaHei";
+	color: #326A83;
+	display: block;
+	margin-top: 10px;
+	font-size: 1.3em;
+}
+main {
+}
+div.demo {
+	width: 500px;
+	font-family: "微软雅黑";
+	margin: 20px auto;
+	padding: 10px 10px;
+	/*display: inline-block;*/
+	background-color: #326a83;
+	border-radius: 10px;
+}
+div.demo h2{
+	text-align: center;
+	font-size: 1.5em;
+	background-color: #133b4c;
+	border-radius: 5px;
+	color: #fff;
+	line-height: 2em;
+}
+div.demo h3{
+	font-size: 1.5em;
+	font-style: bold;
+	background-color: #326a83;
+	border-radius: 5px;
+	color: #fff;
+}
+div.content {
+	padding: 10px 10px;
+	margin-top: 5px;
+	background-color: #326a83;
+	border-radius: 5px;
+}
+div.content p {
+	padding : 0 50px;
+	font-size: 1.2em;
+}
+a{
+	margin: 20px auto;	
+	width: 500px;
+	display: block;
+	transition: opacity 0.5s;
+}
+a:hover {
+	opacity: 0.7;
+}

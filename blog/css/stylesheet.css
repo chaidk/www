@@ -64,9 +64,10 @@ div.blog-post h1 {
 	line-height: 2.5em;
 }
 div.blog-post p {
-	font-family: 宋体;
+	font-family: 微软雅黑;
 	font-size: 1.5em;
 	color: #404040;
+	text-overflow:ellipsis;
 }
 div.blog-post p.blog-post-meta {
 	line-height: 2em;
