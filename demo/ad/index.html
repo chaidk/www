@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=640,inital-scale=1.0,user-scalable=no">
+	<title>新浪移动创意非标广告</title>
+	<link rel="stylesheet" href="styles/stylesheet.css" />
+	<link rel="stylesheet" href="styles/swiper-3.3.1.min.css" />
+	<link rel="stylesheet" href="styles/animate.min.css" />
+</head>
+<body>
+  <div id="loading">
+        <p>Loading...</p>
+        <div class="spinner">
+          <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+          </div>
+          <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+          </div>
+          <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+          </div>
+        </div>
+    </div>
+  <div>
+    <div class="page" id="page-1"><img src="img/大事件彩蛋.png" alt=""></div>
+    <div class="page" id="page-2"><img src="img/正文页关键词.png" alt=""></div>
+    <div class="page" id="page-3"><img src="img/bigday.png" alt=""></div>
+    <div class="page" id="page-4"><img src="img/喜报&push.png" alt=""></div>
+    <div class="page" id="page-5"><img src="img/loading广告.png" alt=""></div>
+    <div class="page" id="page-6"><img src="img/流媒体.png" alt=""></div>
+    <div class="page" id="page-7"><img src="img/动态开机报头.png" alt=""></div>
+    <div class="page" id="page-8"><img src="img/全天候更新.png" alt=""></div>
+  </div>
+  <div class="pa none1" id="back"><img class="none" src="img/back.png" alt=""></div>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" id="p1">
+        <div class="pa ani" id="p1-1"  swiper-animate-effect="fadeInUp" swiper-animate-duration="0.7s" swiper-animate-delay="0.2s"><img src="img/p1-1.png" alt=""></div>
+        <div class="pa ani" id="p1-2"  swiper-animate-effect="fadeInDown" swiper-animate-duration="0.7s"><img src="img/p1-2.png" alt=""></div>
+        <div class="pa ani" id="p1-3"  swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s"><img src="img/p1-3.png" alt=""></div>
+        <div class="pa ani none" id="p1-4"  swiper-animate-effect="swing" swiper-animate-duration="1s" swiper-animate-delay="1s"><img src="img/p1-4.png" alt=""></div>
+        <div class="pa ani none" id="p1-5"  swiper-animate-effect="fadeInUp" swiper-animate-duration="15s" swiper-animate-delay="0s"><img src="img/p1-5.png" alt=""></div>
+        <div class="pa ani none" id="p1-6"  swiper-animate-effect="fadeInUp" swiper-animate-duration="10s" swiper-animate-delay="0s"><img src="img/p1-6.png" alt=""></div>
+        <div class="pa ani" id="p1-7"  swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.7s" swiper-animate-delay="0.3s"><img src="img/p1-7.png" alt=""></div>
+        <div class="pa ani" id="p1-8"  swiper-animate-effect="bounceInRight" swiper-animate-duration="0.7s" swiper-animate-delay="0.4s"><img src="img/p1-8.png" alt=""></div>
+        <div class="pa ani" id="p1-ctn"  swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+          <div id="p1-r1">
+            <div class="p1-btn fl tac cw" id="p1-btn1">大事件彩蛋</div>
+            <div class="p1-btn fr tac cw" id="p1-btn2">正文页关键词</div>
+          </div>
+          <div id="p1-r2">
+          <div class="p1-btn fl tac cw" id="p1-btn3">BIGDAY</div>
+          <div class="p1-btn fr tac cw" id="p1-btn4">喜报&push</div>
+          </div>
+          <div id="p1-r3">
+            <div class="p1-btn fl tac cw" id="p1-btn5">loading</div>
+            <div class="p1-btn fr tac cw" id="p1-btn6">流媒体</div>
+          </div>
+          <div id="p1-r4">
+            <div class="p1-btn fl tac cw" id="p1-btn7">动态开机报头</div>
+            <div class="p1-btn fr tac cw" id="p1-btn8">全天候更新</div>
+          </div>
+        </div>
+			</div>
+			<!-- <div class="swiper-slide" id="p2">
+      </div>
+			<div class="swiper-slide" id="p3">
+      </div>
+    	<div class="swiper-slide" id="p4">
+      </div>
+			<div class="swiper-slide" id="p5">
+      </div> -->
+		</div>
+	</div>
+	<script src="scripts/jquery-1.12.3.js" type="text/javascript"></script>
+	<script src="scripts/js.js" type="text/javascript"></script>
+    <script src="scripts/swiper-3.3.1.jquery.min.js"></script>
+    <script src="scripts/swiper.animate1.0.2.min.js"></script>
+    <script>
+    var swiper = new Swiper(".swiper-container",{
+        direction : "vertical",
+    	mousewheelControl : true,
+        onInit : function(swiper){
+            swiperAnimateCache(swiper);
+            swiperAnimate(swiper);
+        },
+        onSlideChangeEnd : function(swiper){
+            swiperAnimate(swiper);
+        },
+    });
+    </script>
+    <script>
+        $("#loading").fadeOut(200);
+    </script>
+    </body>
+</html>
