@@ -47,12 +47,14 @@ div#p1-4 {
 div#p1-5 {
 	left:35px;
 	top:175px;
-	animation: shake 2s infinite;
+	/*animation: shake 2s infinite;*/
+	/*webkit-animation: shake 2s infinite;*/
 }
 div#p1-6 {
 	left:555px;
 	top:175px;
-	animation: shake 2s infinite;
+	/*animation: shake 2s infinite;*/
+	/*webkit-animation: shake 2s infinite;*/
 }
 div#p1-7 {
 	left:155px;
@@ -92,16 +94,14 @@ div#p1-r1,div#p1-r2,div#p1-r3,div#p1-r4{
 	top: 500px;
 	z-index: 9;
 	transition:width 0.3s ease-in-out,height 0.3s ease-in-out,left 0.3s ease-in-out,top 0.3s ease-in-out;
-};
+}
 /*loading*/
 
 #loading {
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-image: url(../images/1.jpg);
+	width: 640px;
+	height: 1136px;
 	background-color: #fbfaf5;
-	background-repeat: no-repeat;
 	text-align: center;
 	z-index: 10;
 }
