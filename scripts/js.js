@@ -1,23 +1,23 @@
 $(function(){
 
-        // //检测平台 
-        // var system = { 
-        //     win: false, 
-        //     mac: false, 
-        //     xll: false, 
-        //     ipad:false 
-        // }; 
-        // var p = navigator.platform; 
-        // system.win = p.indexOf("Win") == 0; 
-        // system.mac = p.indexOf("Mac") == 0; 
-        // system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
-        // system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
-        // if (system.win || system.mac || system.xll||system.ipad) { 
- 
-        // } else { 
- 
-        //     window.location.href = "m/index.html"; 
-        // } 
+        // //检测平台
+        // var system = {
+        //     win: false,
+        //     mac: false,
+        //     xll: false,
+        //     ipad:false
+        // };
+        // var p = navigator.platform;
+        // system.win = p.indexOf("Win") == 0;
+        // system.mac = p.indexOf("Mac") == 0;
+        // system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        // system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false;
+        // if (system.win || system.mac || system.xll||system.ipad) {
+
+        // } else {
+
+        //     window.location.href = "m/index.html";
+        // }
 
 	// logo
 	var logo=$("img#logo");
@@ -33,11 +33,11 @@ $(function(){
 	var nav=$("div.nav");
 	var background=$("img.background");
 	background.fadeIn(1000);
-	// up.mouseover(function(){
-	// 	up.toggleClass("hover");
-	// }).mouseout(function(){`
-	// 	up.toggleClass("hover");	
-	// });
+	up.mouseover(function(){
+		up.toggleClass("hover");
+	}).mouseout(function(){
+		up.toggleClass("hover");
+	});
 	menu.click(function(){
 		if(menu.attr("id")=="0"){
 				open();
@@ -55,31 +55,22 @@ $(function(){
 		nav.css("width",200);
 		background.css("left","-200px");
 		// for (var i=0;i<4;i++) {
-			$("div.nav div:gt(0)").css("display","none");			
+			$("div.nav div:gt(0)").css("display","none");
 			$("div.nav div#nav0").delay(100).fadeIn(1000);
 			$("div.nav div#nav1").delay(200).fadeIn(1000);
 			$("div.nav div#nav2").delay(300).fadeIn(1000);
 			$("div.nav div#nav3").delay(400).fadeIn(1000);
+			$("div.nav div#nav4").delay(500).fadeIn(1000);
 
-		// }	
+		// }
 		}
 	function close(){
 		menu.attr("id","0");
 		icon.css("right","100px").toggleClass("open");
-		nav.css("width",0);	
+		nav.css("width",0);
 		background.css("left","0px");
 		}
-		});	
-	// function open(){
-	// 	menu.attr("id","1");
-	// 	icon.animate({right:"250px"},300);
-	// 	nav.animate({width:200},300);
-	// 	}
-	// function close(){
-	// 	menu.attr("id","0");
-	// 	icon.animate({right:"100px"},300);
-	// 	nav.animate({width:0},300);
-	// 	}
+		});
 
 	//contact
 $("img.github").mouseover(function(){

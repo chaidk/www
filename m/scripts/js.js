@@ -27,11 +27,12 @@ $(function(){
 		// $("html").css("background-color","#000000");
 		$("img.background").fadeOut(500);
 		// for (var i=0;i<4;i++) {
-			$("div.nav div:gt(0)").css("display","none");			
+			$("div.nav div:gt(0)").css("display","none");
 			$("div.nav div#nav0").delay(200).fadeIn(1000);
 			$("div.nav div#nav1").delay(400).fadeIn(1000);
 			$("div.nav div#nav2").delay(600).fadeIn(1000);
 			$("div.nav div#nav3").delay(800).fadeIn(1000);
+			$("div.nav div#nav4").delay(1000).fadeIn(1000);
 		// }
 		}
 	function close(){
@@ -39,8 +40,8 @@ $(function(){
 		icon.toggleClass("touch");
 		nav.css("height",0);
 		header.css("background-color","#202020");
-		$("img.background").fadeIn(500);	
-		};	
+		$("img.background").fadeIn(500);
+		};
 	icon.click(function(){
 		if(icon.attr("id")=="0"){
 				open();
